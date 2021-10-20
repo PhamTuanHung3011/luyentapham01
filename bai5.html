@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    let theString = prompt('Nhap len ngoi sao muon tim! ')
+    let array1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let array2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa', 'Major', 'Leo'];
+
+    function kiemTra(check) {
+        for (let i = 0; i < array1.length; i++) {
+            if (check === array1[i]) {
+                for (let j = 0; j < array2.length; j++) {
+                    if (i === j) {
+                        // document.write(array2[j]);
+                        return array2[j];
+                    }else {
+                        continue;
+                    }
+                }
+            }
+
+        }
+    }
+
+
+    let answer = kiemTra(theString);
+    document.write(answer);
+</script>
+
+
+</body>
+</html>

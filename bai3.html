@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let numBer1 = parseInt(prompt('Nhap so thu 1'));
+    let numBer2 = parseInt(prompt('Nhap so thu 2'));
+
+    function soSanh(a,b){
+        if (a > b){
+            alert(a + ' lon hon '+ b);
+        } else {
+            let tong = a + b;
+            return 'gia tri cua tong 2 so la: '+tong;
+        }
+    }
+
+    let answer = soSanh(numBer1, numBer2);
+    document.write(answer);
+
+</script>
+
+
+</body>
+</html>
